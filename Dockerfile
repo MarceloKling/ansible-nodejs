@@ -1,5 +1,5 @@
-#
-# ------------------------------------------------------
+ 
+##------------------------------------------------------
 #                       Dockerfile
 # ------------------------------------------------------
 # image:    ansible-nodejs
@@ -34,3 +34,4 @@ RUN ansible-playbook -i $WORKDIR/ci/inventory $WORKDIR/ci/playbook.yml -c local 
 # -----> Cleanup
 WORKDIR /
 RUN rm -R /tmp/build
+ 
